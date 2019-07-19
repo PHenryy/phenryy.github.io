@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>在 Vue 项目中配置 tailwindcss | PHenryy</title>
+    <meta name="description" content="just another blog">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.83d1111a.css" as="style"><link rel="preload" href="/assets/js/app.cea8de6d.js" as="script"><link rel="preload" href="/assets/js/4.304c34ee.js" as="script"><link rel="preload" href="/assets/js/1.87b9b94e.js" as="script"><link rel="preload" href="/assets/js/15.48d07c58.js" as="script"><link rel="prefetch" href="/assets/js/10.0bac312a.js"><link rel="prefetch" href="/assets/js/11.d9e0943d.js"><link rel="prefetch" href="/assets/js/12.f55bf1ba.js"><link rel="prefetch" href="/assets/js/13.1dadf224.js"><link rel="prefetch" href="/assets/js/14.131f27b4.js"><link rel="prefetch" href="/assets/js/16.4fa119ee.js"><link rel="prefetch" href="/assets/js/17.283282fc.js"><link rel="prefetch" href="/assets/js/18.da0ea4fe.js"><link rel="prefetch" href="/assets/js/3.9eb47506.js"><link rel="prefetch" href="/assets/js/5.18c4b9b1.js"><link rel="prefetch" href="/assets/js/6.907ab8ac.js"><link rel="prefetch" href="/assets/js/7.dd400d47.js"><link rel="prefetch" href="/assets/js/8.7e8b3242.js"><link rel="prefetch" href="/assets/js/9.6a058516.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.83d1111a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="bg-black"><div class="w-full h-16"><div class="flex justify-between items-center w-240 m-auto h-full"><a href="/blogs" class="router-link-active"><img src="/assets/img/PHenryy.9807e49e.svg" class="w-30"></a> <ul class="flex items-center"><li><div class="search-box rounded-none"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div></li> <li><a href="/resources" class="text-white">资源</a></li></ul></div></div> <div class="w-240 m-auto flex"><div class="post max-w-180 text-white"><div class="content__article"><p><img src="/images/tailwindcss_vue.jpeg" alt=""></p> <ol><li>安装 tailwindcss</li></ol> <div class="language-shell extra-class"><pre class="language-text"><code>npm install tailwindcss
+</code></pre></div><ol start="2"><li>创建全局 css (或其他 css 预处理器) 文件，并加入以下代码</li></ol> <div class="language-css extra-class"><pre class="language-css"><code><span class="token atrule"><span class="token rule">@tailwind</span> base<span class="token punctuation">;</span></span>
+
+<span class="token atrule"><span class="token rule">@tailwind</span> components<span class="token punctuation">;</span></span>
+
+<span class="token atrule"><span class="token rule">@tailwind</span> utilities<span class="token punctuation">;</span></span>
+</code></pre></div><p>在 main.js 中引入</p> <ol start="3"><li>执行命令创建 tailwindcss 配置文件 (自定义主题，插件等)</li></ol> <div class="language-shell extra-class"><pre class="language-text"><code>npx tailwind init
+</code></pre></div><ol start="4"><li>配置 postcss.config.js</li></ol> <div class="language-javascript extra-class"><pre class="language-javascript"><code>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  plugins<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'tailwindcss'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">'tailwind.config.js'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'autoprefixer'</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div></div> <!----></div> <div class="w-full py-20 flex justify-center"><div class="w-48 mx-5"><h5 class="text-white mb-5">联系</h5> <ul class="flex"><li class="mr-2"><a href="mailto:qwerty.code24@gmail.com"><img src="/assets/img/gmail.08141dc3.svg" alt="Google Mail"></a></li> <li class="mr-2"><a href="mailto:775087535@qq.com"><img src="/assets/img/qq.7f79aa1b.svg" alt="QQ Mail"></a></li> <li class="mr-2"><a href="https://github.com/PHenryy"><img src="/assets/img/github.44ad2391.svg" alt="Github"></a></li></ul></div> <div class="w-48 mx-5"><h5 class="text-white mb-5">友链</h5> <ul class="flex"><li class="mr-2"><a href="https://www.jackeriss.com/" class="text-white">Jackeriss</a></li></ul></div></div></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.cea8de6d.js" defer></script><script src="/assets/js/4.304c34ee.js" defer></script><script src="/assets/js/1.87b9b94e.js" defer></script><script src="/assets/js/15.48d07c58.js" defer></script>
+  </body>
+</html>
